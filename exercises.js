@@ -535,7 +535,16 @@ console.log('East players:' + eastPlayers);
  * Console.log your results.
 */ 
 console.log('Logic Homework #19');
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+  for(var i=0; i<special.length; i++){
+    special[i] = 'Classic Tuna';
+    console.log(special);
+  }
+  console.log(special)
+}
+subways(subOftheDay);
 
 /*
 Final Boss
@@ -552,7 +561,15 @@ Final Boss
 var phrase = "An apple a day keeps Alice feeling awesome!";
 console.log('Old phrase:', phrase);
 
-
+function removeLetter(str){
+  for(var i=0;i<str.length;i++){
+    if(str[i] === 'A'){
+      str.splice(i, 0);
+    }
+  }
+}
+removeLetter(phrase);
+console.log('New phrase:', phrase)
 
 
 
