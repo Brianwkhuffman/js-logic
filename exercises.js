@@ -535,16 +535,18 @@ console.log('East players:' + eastPlayers);
  * Console.log your results.
 */ 
 console.log('Logic Homework #19');
-var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+console.log('Sub of the day:' + subOftheDay);
 function subways(special){
-  for(var i=0; i<special.length; i++){
-    special[i] = 'Classic Tuna';
-    console.log(special);
+  for (var i = 0; i < special.length; i++){
+    if (i%2 === 1){
+      special[i] = 'Classic tuna';
+    }
   }
-  console.log(special)
 }
 subways(subOftheDay);
+console.log('New sub of the day:' + subOftheDay);
 
 /*
 Final Boss
@@ -562,14 +564,13 @@ var phrase = "An apple a day keeps Alice feeling awesome!";
 console.log('Old phrase:', phrase);
 
 function removeLetter(str){
-  for(var i=0;i<str.length;i++){
-    if(str[i] === 'A'){
-      str.splice(i, 0);
-    }
+  var strArr = str.split(' ');
+  for (var i=0;i<strArr.length;i++){
+ // i'm not exactly sure what method or how to go about isolating the a's
   }
+  return strArr.join(' ');
 }
-removeLetter(phrase);
-console.log('New phrase:', phrase)
-
+var newPhrase = (removeEventListener(phrase));
+console.log('New phrase:', newPhrase);
 
 
